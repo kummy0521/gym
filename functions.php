@@ -25,3 +25,6 @@ function add_files()
 	wp_enqueue_script('main-script', get_template_directory_uri() . '/js/script.js', array('swiper-js'), $cache, true);
 }
 add_action('wp_enqueue_scripts', 'add_files');
+
+// アイキャッチ画像の有効化
+add_theme_support('post-thumbnails');

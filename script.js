@@ -17,3 +17,21 @@ JavaScriptで以下の条件のコードを書いてください。
 ==============================
 
 このタスクで最高の結果を出すために、追加の情報が欲しい場合は、質問してください
+
+document.addEventListener('DOMContentLoaded', function () {
+    var swiper = new Swiper('.mv_slide', {
+        slidesPerView: 'auto',
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        speed: 1000,
+    });
+});
