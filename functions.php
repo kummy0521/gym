@@ -28,3 +28,23 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 // アイキャッチ画像の有効化
 add_theme_support('post-thumbnails');
+
+
+// 「news」投稿のパーマリンクを /news/投稿ID に変更
+function custom_news_permalink($post_link, $post) {
+    if ($post->post_type === 'news') {
+        return home_url('/news/' . $post->ID . '/');
+    }
+    return $post_link;
+}
+add_filter('post_type_link', 'custom_news_permalink', 10, 2);
+
+// 「news」投稿用のリライトルールを追加
+function custom_news_rewrite_rule() {
+    add_rewrite_rule(
+        '^news/([0-9]+)/?$',
+        'index.php?post_type=news&p=$matches[1]',
+        'top'
+    );
+}
+add_action('init', 'custom_news_rewrite_rule');
