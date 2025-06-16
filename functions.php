@@ -14,7 +14,7 @@ function add_files()
 	// jQueryの読み込み
 	wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', "", $cache, false);
 
-  // Swiper読み込み（CSS、JS）
+	// Swiper読み込み（CSS、JS）
 	// Swiper CSS
 	wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	// Swiper JavaScript
