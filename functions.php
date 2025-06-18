@@ -28,7 +28,7 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 // アイキャッチ画像の有効化
 add_theme_support('post-thumbnails');
-<<<<<<< HEAD
+
 
 
 // 「news」投稿のパーマリンクを /news/投稿ID に変更
@@ -49,5 +49,3 @@ function custom_news_rewrite_rule() {
     );
 }
 add_action('init', 'custom_news_rewrite_rule');
-=======
->>>>>>> main
