@@ -2,7 +2,7 @@
 <main class="main front_page">
 	<!-- MV -->
 	<div class="mv">
-        <h1 class="mv_message">※あなたの心を癒す☆<br>☆北欧の贈り物※</h1>
+        <h1 class="mv_message">あなたの心を癒す<br>北欧の贈り物</h1>
 		<div class="swiper mv_slide">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide mv_item">
