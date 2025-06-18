@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main class="main front_page">
 	<!-- MV -->
 	<div class="mv">
@@ -23,14 +22,7 @@
 			<div class="swiper-pagination mv_dot"></div>
 		</div>
 	</div>
-</main>
-<main class="main front_page">
-	<!-- MV -->
-	<div class="mv">
-		・・・
-	</div>
-
-	<!-- News -->
+    <!-- News -->
 	<section class="top_news section">
 		<h2 class="section_title">News</h2>
 

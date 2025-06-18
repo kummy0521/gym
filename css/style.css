@@ -768,6 +768,24 @@ img {
   }
 }
 
+.mv {
+  position: relative;
+}
+
+.mv_message {
+  position: absolute;
+  top: 160px;
+  right: calc(50% + 100px);
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .mv_message {
+    top: 134px;
+    right: auto;
+    left: 0;
+  }
+}
+
 .mv_message {
   display: -webkit-box;
   display: -ms-flexbox;

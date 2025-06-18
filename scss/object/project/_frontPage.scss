@@ -1,4 +1,4 @@
-@use "../../foundation/settings/index" as *;
+@use '../../foundation/settings/index' as *;
 
 .mv_slide {
   padding-bottom: 40px;
@@ -23,7 +23,6 @@
     object-fit: cover;
   }
 }
-
 .mv_dot {
   --swiper-pagination-bottom: 0;
   --swiper-pagination-bullet-width: 12px;
@@ -34,6 +33,23 @@
     --swiper-pagination-bullet-width: 6px;
     --swiper-pagination-bullet-height: 6px;
     --swiper-pagination-bullet-horizontal-gap: 4px;
+  }
+}
+.mv {
+  position: relative;
+}
+
+// position
+.mv_message {
+  position: absolute;
+  top: 160px;
+  right: calc(50% + 100px);
+  z-index: 2;
+
+  @include media() {
+    top: 134px;
+    right: auto;
+    left: 0;
   }
 }
 // スタイルのみ
@@ -55,6 +71,7 @@
   @include media() {
    width: 315px;
   }
+<<<<<<< HEAD
 }
 .mv {
   position: relative;
@@ -74,3 +91,6 @@
   }
 }
 
+=======
+}
+>>>>>>> main

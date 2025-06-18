@@ -14,7 +14,7 @@ function add_files()
 	// jQueryの読み込み
 	wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', "", $cache, false);
 
-  // Swiper読み込み（CSS、JS）
+	// Swiper読み込み（CSS、JS）
 	// Swiper CSS
 	wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css');
 	// Swiper JavaScript
@@ -28,6 +28,7 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 // アイキャッチ画像の有効化
 add_theme_support('post-thumbnails');
+<<<<<<< HEAD
 
 
 // 「news」投稿のパーマリンクを /news/投稿ID に変更
@@ -48,3 +49,5 @@ function custom_news_rewrite_rule() {
     );
 }
 add_action('init', 'custom_news_rewrite_rule');
+=======
+>>>>>>> main
