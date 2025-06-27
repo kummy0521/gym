@@ -111,10 +111,10 @@
 								</a>
 							</div>
 						<?php
-						}
+						}}
 						?>
 				</div>
-
+					
 
 		<div class="button_area">
 			<a href="<?= home_url(); ?>/news" class="button">全ての商品を見る</a>
